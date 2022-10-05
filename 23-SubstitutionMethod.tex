@@ -1,0 +1,152 @@
+% !TeX root = main.tex
+
+\hypertarget{substitution-method}{%
+\section{Substitution Method}\label{substitution-method}}
+
+Recall rules of derivatives.
+
+\begin{enumerate}[sepno]
+\item
+  Chain rule: \((f(g(x)))'=f'(g(x))g'(x)\).
+\item
+  Product Rule: \((f(x)g(x))'=f'(x)g(x)+f(x)g'(x)\).
+\end{enumerate}
+
+Reverse those rules, we will get techniques of integration.
+
+\begin{theorem}
+
+\textbf{(Substitution Method for Indefinite Integrals)} Let \(u=g(x)\),
+where \(g'(x)\) is continuous over an interval, let \(f(x)\) be
+continuous over the corresponding range of g, and let \(F(x)\) be an
+antiderivative of \(f(x).\) Then,
+\[\int f(g(x))g'(x)\mathrm{d} x =\int f(u)\,)u=F(u)+C= F(g(x))+C.\]
+
+\end{theorem}
+
+\begin{example}
+
+Find the indefinite integral \[\int 2x(x^2+5)^7\mathrm{d} x.\]
+
+\end{example}
+\vspace*{6\baselineskip}
+
+\begin{example}
+
+Find the indefinite integral \[\int \sqrt{2x+1}\mathrm{d} x.\]
+
+\end{example}
+\vspace*{6\baselineskip}
+
+\begin{example}
+
+Find the indefinite integral
+\[\int 8(x+1)\sqrt[3]{x^2+2x}\mathrm{d} x.\]
+
+\end{example}
+\vspace*{6\baselineskip}
+
+\begin{example}
+
+Find the indefinite integral
+\[\int \dfrac{1}{\sqrt{x}(\sqrt{x}+1)}\mathrm{d} x.\]
+
+\end{example}
+\vspace*{6\baselineskip}
+
+\begin{example}
+
+Find the indefinite integral
+\[\int \dfrac{\sin x}{\cos^5x}\mathrm{d} x.\]
+
+\end{example}
+\vspace*{6\baselineskip}
+
+\begin{example}
+
+Find the indefinite integral \[\int \cos x(2\sin x+3)^3\mathrm{d} x.\]
+
+\end{example}
+\vspace*{6\baselineskip}
+
+\begin{example}
+
+Find the indefinite integral
+\[\int \frac{x+1}{\sqrt{x-1}}\mathrm{d} x.\]
+
+\end{example}
+\vspace*{6\baselineskip}
+
+\begin{theorem}
+
+\textbf{Substitution for Definite Integral}
+
+Let \(u=g(x)\) and let \(g'\) be continuous over an interval \([a,b]\),
+and let \(f\) be continuous over the range of \(u=g(x).\) Then,
+\[\int^b_af(g(x))g'(x)\mathrm{d} x=\int^{g(b)}_{g(a)}f(u)\mathrm{d} u.\]
+
+\end{theorem}
+
+\begin{example}
+
+Evaluate the definite integral
+\[\int^1_0 x\sin\left(\dfrac{\pi x^2}{2}\right)\mathrm{d} x.\]
+
+\end{example}
+\vspace*{6\baselineskip}
+
+\begin{example}
+
+Evaluate the definite integral \[\int^2_1 \cos(3x-2)\mathrm{d} x.\]
+
+\end{example}
+\vspace*{6\baselineskip}
+
+\begin{example}
+
+Evaluate the definite integral
+\[\int^1_{-2} \dfrac{x}{\sqrt{x^2+1}}\mathrm{d} x.\]
+
+\end{example}
+\vspace*{6\baselineskip}
+
+\begin{example}
+
+Evaluate the definite integral
+\[\displaystyle \int^{3\pi/4}_{\pi/4}\sin^2 t\cos t\mathrm{d} t.\]
+
+\end{example}
+\vspace*{6\baselineskip}
+
+\subsection{Practice}
+
+\begin{exercise}
+
+Evaluate the following integrals.
+
+\begin{enumerate}
+\item
+  \(\displaystyle \int x\sqrt{x+1}\mathrm{d} x\)
+\item
+  \(\displaystyle \int\frac{x}{(4x^2+9)^2}\mathrm{d} x\)
+\item
+  \(\displaystyle \int(x - 2)^7\mathrm{d} x\)
+\item
+  \(\displaystyle \int\cos^3 \theta\sin \theta\mathrm{d} \theta\)
+\end{enumerate}
+
+\end{exercise}
+
+\begin{exercise}
+
+\begin{enumerate}
+\item
+  \(\displaystyle \int^1_0x\sqrt{1 - x^2}\mathrm{d} x\)
+\item
+  \(\displaystyle \int^{\pi/4}_0\sec^2 \theta \tan \theta \mathrm{d} \theta \)
+\item
+  \(\displaystyle \int^{\pi/4}_0\frac{\sin \theta }{\cos^4 \theta }\mathrm{d} \theta \)
+\end{enumerate}
+
+\end{exercise}
+

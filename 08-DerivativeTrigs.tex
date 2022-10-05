@@ -1,0 +1,128 @@
+% !TeX root = main.tex
+
+\hypertarget{derivatives-of-trigonometric-functions}{%
+\section{Derivatives of Trigonometric
+Functions}\label{derivatives-of-trigonometric-functions}}
+
+\hypertarget{the-derivative-of-the-sine-function}{%
+\subsection{The Derivative of the Sine
+Function}\label{the-derivative-of-the-sine-function}}
+
+Recall the formula of sum of angles 
+\[
+\begin{aligned}
+  \sin(x+h)=&\sin x\cos h+\cos x\sin h\\[0.5em]
+  \cos(x+h)=&\cos x\cos h-\sin x\sin h.
+\end{aligned}
+\] Then for any \(x\), we have \[
+\begin{aligned}
+  \dfrac{\mathrm{d}}{\mathrm{d} x}(\sin x)=&\lim\limits_{h\to 0}\dfrac{\sin(x+h)-\sin x}{h}\\
+  =&\lim\limits_{h\to 0}\dfrac{\sin x\cos h+\cos x\sin h-\sin x}{h}\\
+  =&\lim\limits_{h\to 0}\dfrac{\sin x(\cos h-1)}{h}+\lim\limits_{h\to 0}\dfrac{\cos x\sin h}{h}\\
+  =&\sin x\lim\limits_{h\to 0}\dfrac{\cos h-1}{h}+\cos x\lim\limits_{h\to 0}\dfrac{\sin h}{h}\\
+  =&\sin x\cdot 0 +\cos x\cdot 1\\
+  =&\cos x.
+\end{aligned}
+\]
+
+\begin{example}
+
+Find the derivative of \(f(x)=x^2\sin x\).
+
+\end{example}
+\vspace*{6\baselineskip}
+
+\hypertarget{derivatives-of-other-trigonometric-functions}{%
+\subsection{Derivatives of Other Trigonometric
+Functions}\label{derivatives-of-other-trigonometric-functions}}
+
+Using the sum angle formula for cosine and limit laws of quotients, we
+obtain the following formulas of derivative of trigonometric functions.
+\[
+\begin{aligned}
+\dfrac{\mathrm{d}}{\mathrm{d} x}\sin x &= \cos x \\
+\dfrac{\mathrm{d}}{\mathrm{d} x}\cos x &= -\sin x\\
+\dfrac{\mathrm{d}}{\mathrm{d} x}\tan x &= \sec^2x\\
+\end{aligned}
+\qquad
+\begin{aligned}
+\dfrac{\mathrm{d}}{\mathrm{d} x}\csc x &= -\csc x \cot x \\
+\dfrac{\mathrm{d}}{\mathrm{d} x}\sec x &= \sec x\tan x\\
+\dfrac{\mathrm{d}}{\mathrm{d} x}\cot x &= -\csc^2x\\
+\end{aligned}
+\]
+
+\begin{example}
+
+Find the derivative of \(f(x)=\cos x\sin x\).
+
+\end{example}
+\vspace*{6\baselineskip}
+
+\begin{example}
+
+Find the derivative of \(f(x)=\dfrac{\cos x-1}{\sin x+1}\).
+
+\end{example}
+\vspace*{6\baselineskip}
+
+\begin{example}
+
+Find the derivative of \(f(x)=2x\tan x-3\cot x\).
+
+\end{example}
+\vspace*{6\baselineskip}
+
+\begin{example}
+
+Find the derivative of \(f(x)=\sec^2x-x\csc x\).
+
+\end{example}
+\vspace*{6\baselineskip}
+
+\begin{example}
+
+Find the 59-th derivative
+\(\dfrac{\mathrm{d}^{59}}{\mathrm{d}x^{59}}(\sin x)\).
+
+\end{example}
+\vspace*{6\baselineskip}
+
+\subsection{Practice}
+
+\begin{exercise}
+
+  Find the derivative of \(f(x)=\dfrac{x^3+x}{\sin x}\).
+  
+  \end{exercise}
+  \vspace*{6\baselineskip}
+  
+\begin{exercise}
+
+Find the derivative of \(f(x)=\dfrac{\sin x+\cos x}{\sin x-\cos x}\).
+
+\end{exercise}
+\vspace*{6\baselineskip}
+
+\begin{exercise}
+
+Find the derivatives of the function \(f(x)=3\tan x+\sqrt{x^5}\).
+
+\end{exercise}
+\vspace*{6\baselineskip}
+
+\begin{exercise}
+
+Find the derivative of \(f(x)=(x+\tan x)(\sec x + x^2)\).
+
+\end{exercise}
+\vspace*{6\baselineskip}
+
+\begin{exercise}
+
+Find the 3-th derivative
+\(\dfrac{\mathrm{d}^{3}}{\mathrm{d}x^{3}}(\tan x)\).
+
+\end{exercise}
+\vspace*{6\baselineskip}
+

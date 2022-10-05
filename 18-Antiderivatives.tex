@@ -1,0 +1,171 @@
+% !TeX root = main.tex
+
+\hypertarget{antiderivatives}{%
+\section{Antiderivatives}\label{antiderivatives}}
+
+\begin{definition}
+
+A function \(F\) is an antiderivative of the function \(f\) if
+\[F'(x)=f(x)\] for all \(x\) in the domain of \(f\).
+
+\end{definition}
+
+\hypertarget{the-most-general-form-of-an-antiderivative}{%
+\subsection{The most general form of an
+antiderivative}\label{the-most-general-form-of-an-antiderivative}}
+
+Let \(F\) be an antiderivative of \(f\) over an interval \(I\). Then, by
+the mean value theorem, for each constant \(C\), the function \(F(x)+C\)
+is also an antiderivative of \(f\) over \(I\); if \(G\) is an
+antiderivative of \(f\) over \(I\), there is a constant \(C\) for which
+\(G(x)=F(x)+C\) over \(I\). In other words, the most general form of the
+antiderivative of \(f\) over \(I\) is \(F(x)+C\).
+
+\begin{example}
+
+For each of the following functions, find all antiderivatives.
+
+\begin{enumerate}
+\item
+  \(f(x)=3x^2\)
+\item
+  \(f(x)=\dfrac{1}{x}\)
+\item
+  \(f(x)=\cos x\)
+\end{enumerate}
+
+\end{example}
+
+\hypertarget{rules-of-antiderivatives}{%
+\subsection{Rules of Antiderivatives}\label{rules-of-antiderivatives}}
+
+\begin{longtable}[]{@{}cc@{}}
+\toprule()
+Function & An antiderivative \\
+\midrule()
+\endhead
+\(af+bg\) & \(aF+bG\) \\
+\(x^n\), \(n\neq -1\) & \(\frac{x^{n+1}}{n+1}\) \\
+\(\sin x\) & \(-\cos x\) \\
+\(\cos x\) & \(\sin x\) \\
+\(\sec^2x\) & \(\tan x\) \\
+\(\sec x\tan x\) & \(\sec x\) \\
+\bottomrule()
+\end{longtable}
+
+In the above table, \(F\) and \(G\) are antiderivative of \(f\) and
+\(g\) respectively, \(a\) and \(b\) are arbitrary constants.
+
+\begin{example}
+
+Find the most general antiderivative for each functions.
+
+\begin{enumerate}
+\item
+  \((5x^3-7x^2+3x+4)\)
+\item
+  \(\dfrac{x^2+4\sqrt[3]{x}}{x}\)
+\item
+  \(\dfrac{4}{1+x^2}\)
+\item
+  \(\tan x\cos x\)
+\end{enumerate}
+
+\end{example}
+
+\hypertarget{antiderivative-with-initial-value}{%
+\subsection{Antiderivative with initial
+value}\label{antiderivative-with-initial-value}}
+
+The most general antiderivative defines a family of curves. If a point
+is given, then there will be specific antiderivative. The problem of
+finding a function \(y\) that satisfies a differential equation
+\(\dfrac{dy}{dx}=f(x)\) with the additional condition \(y(x_0)=y_0\) is
+known as an initial-value problem. The condition \$ y(x\_0)=y\_0\$ is
+known as an initial condition.
+
+\begin{example}
+
+Solve the initial-value problem
+\[\dfrac{dy}{dx}=\sin x,\quad\text{with}\quad y(0)=5.\]
+
+\end{example}
+\vspace*{6\baselineskip}
+
+\begin{example}
+
+Find an equation for the function \(y\) that satisfies the following
+conditions \[\dfrac{dy}{dx}=3x^{-2},\quad\text{and}\quad y(1)=2.\]
+
+\end{example}
+\vspace*{6\baselineskip}
+
+\begin{example}
+
+Find an equation for the function \(f\) that satisfies the following
+conditions \[f''(x)=\sin x,\quad f'(0)=1, \text{and}\quad f(\pi)=0.\]
+
+\end{example}
+\vspace*{6\baselineskip}
+
+\hypertarget{application}{%
+\subsection{Application}\label{application}}
+
+\begin{example}
+
+A car is traveling at the rate of \(88 \text{ ft}/\text{s}\) when the
+brakes are applied. The car begins decelerating at a constant rate of
+\(15 \text{ ft}/\text{s}^2.\)
+
+\begin{enumerate}
+\item
+  How many seconds elapse before the car stops?
+\item
+  How far does the car travel during that time?
+\end{enumerate}
+
+\end{example}
+
+\hypertarget{practice}{%
+\subsection{Practice}\label{practice}}
+
+\begin{exercise}
+
+Find the antiderivative \(F(x)\) of each function \(f(x).\)
+
+\begin{enumerate}
+\item
+  \(f(x)=5x^4+4x^5\)
+\item
+  \(f(x)=sec^2(x)+1\)
+\item
+  \(f(x)=2\sin x-\cos x\)
+\item
+  \(f(x)=\frac{x+1}{\sqrt{x}}\)
+\end{enumerate}
+
+\end{exercise}
+
+\begin{exercise}
+
+Solve the initial value problem.
+
+\begin{enumerate}
+\item
+  \(f'(x)=x^{-3},\quad f(1)=1\)
+\item
+  \(f'(x)=\sqrt{x}+x^2,\quad f(0)=2\)
+\item
+  \(f''(x)=x^2+2,\quad f'(0)=1,\quad f(1)=2\)
+\end{enumerate}
+
+\end{exercise}
+
+\begin{exercise}
+
+A car is being driven at a rate of \(40\) mph when the brakes are
+applied. The car decelerates at a constant rate of \(10\) ft/sec2. How
+long before the car stops?
+
+\end{exercise}
+

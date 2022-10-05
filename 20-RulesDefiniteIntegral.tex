@@ -1,0 +1,203 @@
+% !TeX root = main.tex
+
+\hypertarget{definite-integrals}{%
+\section{Definite Integrals}\label{definite-integrals}}
+
+\hypertarget{definite-integrals-1}{%
+\subsection{Definite Integrals}\label{definite-integrals-1}}
+
+\begin{definition}
+
+Let \(f(x)\) be an integrable function, particularly, a continuous
+function, defined over an interval \([a,b]\). The \textbf{definite
+integral} of \(f\) from \(a\) to \(b\) is defined as
+\[\int^b_af(x)\mathrm{d}x=\lim\limits_{n\to\infty}\sum\limits_{i=1}^nf(x^*_i)\Delta x.\]
+The symbol \(\int\) is called an integral sign. The numbers \(a\) and
+\(b\) are called the \textbf{upper and lower limits of integration}. The
+function \(f(x)\) is called the \textbf{integrand}. The
+\textbf{differential} \(\mathrm{d} x\) is called the \textbf{variable of
+integration}.
+
+\end{definition}
+
+Like the index in a sigma notation, the variable of integration is a
+dummy variable, which mean you may use any other letter instead of \(x\)
+to write the integral.
+
+\textbf{Fact:} The definite integral \(\int_a^bf(x)\mathrm{d}x\) is the
+signed area under the curve \(f\) over the interval \([a, b]\).
+
+\begin{example}
+
+Find the definite integral \(\int_a^bc\mathrm{d}x\) using a Riemann sum
+and a graph.
+
+\end{example}
+\vspace*{6\baselineskip}
+
+\begin{example}
+
+Find the definite integral \(\int_a^bx\mathrm{d}x\) using a Riemann sum
+and a graph.
+
+\end{example}
+\vspace*{6\baselineskip}
+
+\begin{example}
+
+Find the definite integral \(\int_{a}^bx^2\mathrm{d}x\) using a Riemann
+sum.
+
+\end{example}
+\vspace*{6\baselineskip}
+
+\begin{example}
+
+Find the definite integral \(\int_0^1\sqrt{1-x^2}\mathrm{d}x\) using a
+graph.
+
+\end{example}
+\vspace*{6\baselineskip}
+
+\begin{example}
+
+Express the limit as an integral and evaluate
+\[\lim\limits_{x\to \infty}\frac{1}{n}\sum_{i=1}^n\frac{i^2}{n^2}\]
+
+\end{example}
+\vspace*{6\baselineskip}
+
+\hypertarget{signed-area}{%
+\subsection{Signed Area}\label{signed-area}}
+
+\begin{definition}
+
+\textbf{(Signed Area)} Let \(f(x)\) be an integrable function defined on
+an interval \([a,b]\). Let \(A_1\) represent the area between \(f(x)\)
+and the \(x\)-axis that lies above the axis and let \(A_2\) represent
+the area between \(f(x)\) and the \(x\)-axis that lies below the axis.
+Then, the~(net) signed area~between \(f(x)\) and the \(x\)-axis is given
+by \[\int^b_af(x)\,dx=A_1 - A_2.\] The total area between \(f(x)\) and the
+\(x\)-axis is given by \[\int^b_a|f(x)|\,dx=A_1+A_2.\]
+
+\end{definition}
+
+\begin{example}
+
+Find the total area between the function \(f(x)=x-2\) and the \(x\)-axis
+over the interval \([0,3]\).
+
+\end{example}
+\vspace*{6\baselineskip}
+
+\hypertarget{rules-of-definite-integrals}{%
+\subsection{Rules of Definite
+Integrals}\label{rules-of-definite-integrals}}
+
+\begin{enumerate}[sepno]
+\item
+  \[\int^a_af(x)\,\mathrm{d}x=0\] If the limits of integration are the
+  same, the integral is just a line and contains no area.
+\item
+  \[\int^a_bf(x)\,\mathrm{d}x= - \int^b_af(x)\,\mathrm{d}x\] If the limits
+  are reversed, then place a negative sign in front of the integral.
+\item
+  \[\int^b_a[f(x)+g(x)]\,\mathrm{d}x=\int^b_af(x)\,\mathrm{d}x+\int^b_ag(x)\,\mathrm{d}x\]
+  The integral of a sum is the sum of the integrals.
+\item
+  \[\int^b_a[f(x) - g(x)]\,\mathrm{d}x=\int^b_af(x)\,\mathrm{d}x - \int^b_ag(x)\,\mathrm{d}x\]
+  The integral of a difference is the difference of the integrals
+\item
+  \[\int^b_acf(x)\,\mathrm{d}x=c\int^b_af(x)\,\mathrm{d}x\] for constant
+  \(c\). The integral of the product of a constant and a function is
+  equal to the constant multiplied by the integral of the function.
+\item
+  \[\int^b_af(x)\,\mathrm{d}x=\int^c_af(x)\,\mathrm{d}x+\int^b_cf(x)\,\mathrm{d}x\]
+  Although this formula normally applies when \(c\) is between \(a\) and
+  \(b\), the formula holds for all values of \(a\), \(b\), and \(c\),
+  provided \(f(x)\) is integrable on the largest interval.
+\end{enumerate}
+
+\begin{example}
+
+If it is known that \(\displaystyle \int^5_1f(x)\,\mathrm{d}x= - 3\) and
+\(\displaystyle \int^5_2f(x)\,\mathrm{d}x=4\), find the value of
+\(\displaystyle \int^2_1f(x)\,\mathrm{d}x.\)
+
+\end{example}
+\vspace*{6\baselineskip}
+
+\begin{theorem}
+
+\textbf{Comparison Theorem:}
+
+\begin{enumerate}[sepno]
+\item
+  If \(f(x) \ge 0\) for \(a \le x \le b\), then \[\int^b_af(x)\,\mathrm{d}x \ge 0.\]
+\item
+  If \(f(x) \ge g(x)\) for \(a \le x \le b\), then
+  \[\int^b_af(x)\,\mathrm{d}x \ge \int^b_ag(x)\,\mathrm{d}x.\]
+\item
+  If \(m\) and \(M\) are constants such that \(m \le f(x) \le M\) for \(a \le x \le b\),
+  then \[m(b - a) \le \int^b_af(x)\,\mathrm{d}x \le M(b - a).\]
+\end{enumerate}
+
+\end{theorem}
+
+\begin{example}
+
+Determine the sign of
+\(\int_0^1(\sqrt{1+x^2}-\sqrt{1+x^4})\mathrm{d} x\)
+
+\end{example}
+\vspace*{6\baselineskip}
+
+\subsection{Practice}
+
+\begin{exercise}
+
+Using geometry to evaluate the integral
+\[\displaystyle \int^3_{ - 3}(3 - |x|)\,dx.\]
+
+\end{exercise}
+\vspace*{6\baselineskip}
+
+\begin{exercise}
+
+Express the limit as integrals
+\[\displaystyle \lim_{n\to\infty}\sum_{i=1}^n\sin^2(2\pi x^*_i)\Delta x\quad \text{over}\quad [0,1].\]
+
+\end{exercise}
+\vspace*{6\baselineskip}
+
+\begin{exercise}
+
+Using integral to evaluate the limit
+\[\displaystyle \lim\limits_{n\to \infty}\frac{1}{n}\sum_{i=1}^n\frac{i - 1}{n}\]
+
+\end{exercise}
+\vspace*{6\baselineskip}
+
+\begin{exercise}
+
+Suppose that \(\displaystyle \int^4_0f(x)\,dx=5\) and
+\(\displaystyle \int^2_0f(x)\,dx= - 3\), and
+\(\displaystyle \int^4_0g(x)\,dx= - 1\) and
+\(\displaystyle \int^2_0g(x)\,dx=2\) Compute the following integrals.
+
+\begin{enumerate}
+\item
+  \(\displaystyle \int^4_0(3f(x) - 4g(x))\,dx\)
+\item
+  \(\displaystyle \int^4_2(2f(x)+3g(x))\,dx\)
+\end{enumerate}
+
+\end{exercise}
+
+\begin{exercise}
+
+Show that
+\(\displaystyle \int^{\pi/4}_{ - \pi/4}\cos t\,dt \ge \pi\sqrt{2}/4\).
+
+\end{exercise}
+

@@ -1,0 +1,185 @@
+% !TeX root = main.tex
+
+\hypertarget{indefinite-integrals-and-net-changes}{%
+\section{Indefinite Integrals and Net
+Changes}\label{indefinite-integrals-and-net-changes}}
+
+\begin{definition}
+
+Let \(F\) be an antiderivative of the function \(f\), that is
+\(F'(x)=f(x)\). We call the most general anti-derivative of \(f\) is the
+indefinite integral and denoted as \[\int{{f(x)\,dx}} = F(x) + c,\]
+where \(c\) is any constant.
+
+\end{definition}
+
+\textbf{Formulas of Indefinite Integrals:}
+
+\begin{itemize}
+\item
+  \(\displaystyle \int\left(af( x )+bg(x)\right)\,dx = a\int f( x )\,dx + b\int g( x )\,dx\)
+\item
+  \(\displaystyle \int x^n \,dx = \dfrac{x^{n+1}}{n+1} + C\), as long as
+  \(n \ne -1\)
+\item
+  \(\displaystyle \int \cos(x) \, dx = \sin(x) + C\)
+\item
+  \(\displaystyle \int \sin(x) \, dx = - \cos(x) + C\)
+\item
+  \(\displaystyle \int \sec^2(x) \, dx = \tan(x) + C\)
+\item
+  \(\displaystyle \int \sec(x) \tan(x) \, dx = \sec(x) + C\)
+\item
+  \(\displaystyle \int \csc^2(x) \, dx = - \cot(x) + C\)
+\item
+  \(\displaystyle \int \csc(x)\cot(x) \, dx = -\csc(x) + C\)
+\end{itemize}
+
+\begin{example}
+
+Evaluate the following indefinite integral.
+
+\begin{enumerate}
+\item
+  \(\displaystyle\int (x^4 + 3x - 2)\,dx\)
+\item
+  \(\displaystyle\int\sqrt{x}(x^2 - 1)\,dx\)
+\item
+  \(\displaystyle\int (\sin x-\sec^2 x)\,dx\)
+\end{enumerate}
+
+\end{example}
+
+\begin{definition}
+
+The \textbf{net change} of a quantity is the integral of the rate of
+change of that quantity. \[\text{Net change}=\int_a^b r(t)\,dt\] where
+\(r(t)\) is the rate of change function.
+
+Note the \textbf{total change} is
+\[\text{Net change}=\int_a^b |r(t)|\,dt\] where \(r(t)\) is the rate of
+change function.
+
+\end{definition}
+
+\begin{example}
+
+Water is flowing into a tank at a rate of \(r(t)=3t^2-2t\) ft\(^3\)/min.
+How much water flows into the tank over the time interval 2 min. to 4
+min.?
+
+In Physics, the net and total changes are known as the displacement and
+distance. The distinction is between velocity and speed.
+
+Displacement = Net change in position = integral of velocity.
+
+Distance traveled Total = change in position = integral of speed.
+
+\end{example}
+\vspace*{6\baselineskip}
+
+\begin{example}
+
+A particle moves along a straight line. The velocity is observed as a
+linear function \(v(t)=2t-6\) m/s from time \(t=0\) to time \(t=3\).
+
+\begin{enumerate}
+\item
+  Find the net displacement of the particle.
+\item
+  Find the distance the particle traveled.
+\end{enumerate}
+
+\end{example}
+
+\begin{definition}
+
+Suppose that \(f\) is continuous over \([a,b]\). The \textbf{average
+value of the function} of \(f\) over \([a, b]\) is defined as
+\[f_{ave}=\dfrac{1}{b-a}\int_a^bf(x)dx.\]
+
+\end{definition}
+
+\begin{example}
+
+Let \(f\) be a continuous function over \([a, b]\). Show that there is
+number \(c\) in \([a,b]\) such that
+\[f(c)=\dfrac{1}{b-a}\int_a^bf(x)dx.\]
+
+\end{example}
+\vspace*{6\baselineskip}
+
+\begin{example}
+
+Find the average of the function \(f(x)=x^2\) over \([-2, 2]\).
+
+\end{example}
+\vspace*{6\baselineskip}
+
+\hypertarget{integration-of-even-and-odd-functions}{%
+\subsection{Integration of Even and Odd
+Functions}\label{integration-of-even-and-odd-functions}}
+
+For continuous even functions \(f\), that is \(f(-x)=f(x)\),
+
+\[\displaystyle \int^a_{-a}f(x)\,dx=2\int^a_0f(x)\,dx.\]
+
+For continuous odd functions \(f\), that is \(f(-x)=-f(x),\)
+
+\[\displaystyle \int^a_{-a}f(x)\,dx=0.\]
+
+\begin{example}
+
+Evaluate the following integrals.
+
+\begin{enumerate}
+\item
+  \(\displaystyle \int^2_{-2}(3x^4+1)\,dx\)
+\item
+  \(\displaystyle \int_\pi^{-\pi} 6\sin x\, dx\)
+\end{enumerate}
+
+\end{example}
+
+\subsection{Practice}
+
+\begin{exercise}
+
+Evaluate the indefinite integral
+
+\begin{enumerate}
+\item
+  \(\displaystyle \int (\sqrt{x}-\frac{1}{\sqrt{x}})\,dx.\)
+\item
+  \(\displaystyle \int(\sin x-\cos x)\,dx\)
+\end{enumerate}
+
+\end{exercise}
+
+\begin{exercise}
+
+Suppose that a particle moves along a straight line with velocity
+\(v(t)=4-2t,\) where \(0\leq t\leq 2\) (in meters per second).
+
+Find the displacement at time t and the total distance traveled up to
+\(t=2\).
+
+\end{exercise}
+\vspace*{6\baselineskip}
+
+
+\begin{exercise}
+
+Find the average of the function
+\[f(x)=\sqrt{x}\qquad\text{over}\qquad [0,4].\]
+
+\end{exercise}
+\vspace*{6\baselineskip}
+
+
+\begin{exercise}
+
+Evaluate the integral \[\int_{-2}^2 x\sqrt{x^4+1}\,dx.\]
+
+\end{exercise}
+

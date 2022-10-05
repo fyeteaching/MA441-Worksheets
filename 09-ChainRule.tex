@@ -1,0 +1,119 @@
+% !TeX root = main.tex
+
+\hypertarget{the-chain-rule}{%
+\section{The Chain Rule}\label{the-chain-rule}}
+
+If \(y=f(u)\) and \(u=g(x)\) are differentiable functions, intuitively,
+using Leibniz's notation, you may find \[
+\frac{\mathrm{d} y}{\mathrm{d} x}=\frac{\mathrm{d} y}{\mathrm{d} u}\cdot\frac{\mathrm{d} u}{\mathrm{d} x}.
+\]
+
+This identity is indeed true and called the Chain Rule which is one of
+the most important of the differentiation rules.
+
+\begin{theorem}
+
+If \(g\) is differentiable at \(x\) and \(f\) is differentiable at
+\(g(x)\), then the composite function \(F=f\circ g\) defined by
+\(F(x)=f(g(x))\) is differentiable at \(x\) and \[
+F'(x)=f'(g(x))\cdot g'(x).
+\]
+
+\end{theorem}
+
+In the chain rule, \(f'(g(x))\) mean the ``output'' of the derivative
+function \(f'\) for the ``input'' \(g(x)\).
+
+The theorem can be proved using the error function of an estimation. Let
+\(\varepsilon(t)=\frac{f(u+t)-f(u)}{t}-f'(u)\) and \(k=g(x+h)-g(x)\).
+Then \[
+\begin{aligned}
+  \dfrac{f(g(x+h))-f(g(x))}{h}
+  =&\dfrac{f(g(x)+k)-f(g(x))}{h}\\
+  =&\frac{k(\varepsilon(k)+f'(g(x))}{h}.
+\end{aligned}
+\] Taking limits will give the chain rule formula.
+
+\begin{example}
+
+\textbf{(General Power Rule):} Let \(f\) be a function differentiable at
+\(x\) and \(h(x)=(f(x))^n\). Find \(h'(x)\).
+
+\end{example}
+\vspace*{6\baselineskip}
+
+\begin{example}
+
+Find the derivative of \(f(x)=\dfrac{1}{(x+1)^3}\).
+
+\end{example}
+\vspace*{6\baselineskip}
+
+\begin{example}
+
+Find the derivative of \(f(x)=\sin(\dfrac{\pi}{2}-x)\).
+
+\end{example}
+\vspace*{6\baselineskip}
+
+\begin{example}
+
+Find the derivative of \(f(x)=\tan(\cos x+1)\).
+
+\end{example}
+\vspace*{6\baselineskip}
+
+\begin{example}
+
+Find the derivative of \(f(x)=\dfrac{x}{(2x+1)^3}\).
+
+\end{example}
+\vspace*{6\baselineskip}
+
+\begin{example}
+  Find the derivative
+  \(\dfrac{\mathrm{d}}{\mathrm{d}x}\left(\dfrac{1}{\sqrt{1+\sin(x^2+1)}}\right)\).
+\end{example}
+\vspace*{6\baselineskip}
+
+\begin{example}
+
+Find all points on the curve \(y=\cos x-\cos^2x\) at which the tangent
+line is horizontal.
+
+\end{example}
+\vspace*{6\baselineskip}
+
+\subsection{Practice}
+
+\begin{exercise}
+
+Find the derivative of \(y=\sqrt{x^2+5}\).
+
+\end{exercise}
+\vspace*{6\baselineskip}
+
+\begin{exercise}
+
+Find the derivative \(\dfrac{\mathrm{d}}{\mathrm{d}x}\cos(u+1)\) where
+\(u=x^3\).
+
+\end{exercise}
+\vspace*{6\baselineskip}
+
+\begin{exercise}
+
+Find the derivatives of the function
+\(f(x)=\sqrt{\frac{(x+1)(x-2)}{(x-1)(x+2)}}\).
+
+\end{exercise}
+\vspace*{6\baselineskip}
+
+\begin{exercise}
+
+Find all points on the curve \(y=\sqrt{4x+1}\) at which the tangent line
+is parallel to the line \(2x-y=1\).
+
+\end{exercise}
+\vspace*{6\baselineskip}
+

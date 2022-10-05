@@ -1,0 +1,175 @@
+% !TeX root = main.tex
+
+\hypertarget{derivative-functions}{%
+\section{Derivative Functions}\label{derivative-functions}}
+
+\hypertarget{derivative-function---definition}{%
+\subsection{Derivative Function -
+Definition}\label{derivative-function---definition}}
+
+\begin{definition}
+Let \(f\) be a function. The \textbf{derivative function}, denoted by
+\(f'\), is the function whose domain consists of those values of \(x\)
+such that the following limit exists:
+\[f'(x)=\lim_{h\to 0}\frac{f(x+h)-f(x)}{h}.\]
+
+A function is said to be \textbf{differentiable over an open set} \(U\)
+if it is differentiable at every point in $U$.
+
+A function is called a \textbf{differential function} if it is
+differentiable over its domain. At boundary points of the domain, the
+differentiability is taken to be the left or right differentiability.
+\end{definition}
+
+\begin{example}
+Determine whether the function \(f(x)=x^3\) is differentiable and find
+the derivative function if it is differentiable.
+\end{example}
+\vspace*{6\baselineskip}
+
+\begin{example}
+Determine whether the function \(f(x)=\sqrt{x}\) is differentiable and
+find the derivative function if it is differentiable.
+\end{example}
+\vspace*{6\baselineskip}
+
+\hypertarget{notations-for-derivatives-and-differentiation}{%
+\subsection{Notations for Derivatives and
+Differentiation}\label{notations-for-derivatives-and-differentiation}}
+
+When a function is given in the form \(y=f(x)\), we also use \(y'\) to
+denote the derivative function. The notations \(f'\) and \(y'\) are
+known as Lagrange's ``prime'' notation.
+
+As the derivative function is essentially (the limit) a difference
+quotient, we also use \(\frac{\mathrm{d}y}{\mathrm{d x}}\) (or
+\(\mathrm{d}y/\mathrm{d x}\)) to denote the derivative functions. The
+notation \(\frac{\mathrm{d}y}{\mathrm{d x}}\) was introduced by Leibniz
+and called
+\href{https://en.wikipedia.org/wiki/Leibniz\%27s_notation}{Leibniz's
+notation}.
+
+\begin{remark}
+The notation \(\mathrm{d} x\) and \(\mathrm{d} y\) may be considered as
+variables and are called \textbf{differentials}. Indeed,
+\(\mathrm{d} x=x-a\) is the difference, by \(\mathrm{d}y = f'(a)(x-a)\)
+is only an approximation of \(f(x)-f(a)\).
+\end{remark}
+
+The process of calculating a derivative is known as
+\textbf{differentiation}. We view the prime \('\) or better the notation
+\(\frac{\mathrm{d}}{\mathrm{d}x}\) as an operator and call it the
+\textbf{differential operator}.
+
+Sometimes, a differential operator is also denoted as \(D\) or \(D_x\)
+to indicate the independent variable \(x\). Those notations are known as
+Euler's notation.
+
+\hypertarget{differentiability-implies-continuity}{%
+\subsection{Differentiability implies
+continuity}\label{differentiability-implies-continuity}}
+
+\begin{theorem}
+If the function \(f\) is differentiable at \(a\), then \(f\) is
+continuous at \(a\).
+\end{theorem}
+
+\begin{remark}
+\begin{enumerate}[sepno]
+\item
+  If a function is not continuous, it cannot be differentiable.
+\item
+  Not every continuous function is differentiable.
+\end{enumerate}
+\end{remark}
+
+\begin{example}
+(Continuous but not differentiable functions)
+
+\begin{enumerate}
+\item
+  The function \(f(x)=|x|\) is continuous but failed to be
+  differentiable at \(0\). Its graph has a sharp corner at \(0.\).
+\item
+  The function \(f(x)=\sqrt[3]{x}\) also fails to be differentiable at
+  \(0\). Because it has a vertical tangent line at \(0\).
+\item
+  The function
+\[f(x)=\begin{cases}x\sin\left(\frac{1}{x}\right),& \text{ if } x\ne 0\\0, & \text{ if } x=\end{cases}\]
+is continuous but fails to be differentiable at a point in more
+complicated ways.
+\end{enumerate}
+\end{example}
+\vspace*{6\baselineskip}
+
+\begin{example}
+Find values of \(a\) and \(b\) that make the following function
+differential. \[
+f(x)=
+\begin{cases}
+    ax+ & x\ge 1\\
+    x^2-3 & x<1\end{cases}
+\]
+\end{example}
+\vspace*{6\baselineskip}
+
+\hypertarget{higher-derivatives}{%
+\subsection{Higher derivatives}\label{higher-derivatives}}
+
+Higher derivatives are defined as repeated differentiations of
+functions.
+
+The \textbf{second derivative} \(f''(x)=(f'(x))'\) is defined the
+derivative of the first derivative of \(f\).
+
+The \textbf{third derivative} is defined as \(f'''(x)=(f''(x))'\).
+
+The \textbf{\(n\)-th derivative} is defined recursively as
+\(f^{(n)}(x)=(f^{(n-1)}(x))'\).
+
+\begin{example}
+Find the second derivative \(f''\) of the function \(f(x)=2x^2-3x+1\).
+\end{example}
+\vspace*{6\baselineskip}
+
+\begin{example}
+The position of a particle along a coordinate axis at time \(t\) (in
+seconds) is given by \(s(t)=3t^2-4t+1\) (in meters). Find the function
+that describes its acceleration at time \(t\).
+\end{example}
+\vspace*{6\baselineskip}
+
+\subsection{Practice}
+
+\begin{exercise}
+  Determine whether the function \(f(x)=x^2-3x\) is differentiable and
+  find the derivative function if it is differentiable.
+  \end{exercise}
+  \vspace*{6\baselineskip}
+  
+  \begin{exercise}
+  Determine whether the function \(f(x)=\sqrt[3]{x}\) is differentiable
+  and find the derivative function if it is differentiable.
+  \end{exercise}
+  \vspace*{6\baselineskip}
+  
+  \begin{exercise}
+  Determine whether the function \(f(x)=\frac{1}{x+1}\) is differentiable
+  and find the derivative function if it is differentiable.
+  \end{exercise}
+  \vspace*{6\baselineskip}
+  
+\begin{exercise}
+Find values of \(a\) and \(b\) that make the following function
+differentiable at \(x=3\).
+\[f(x)=\begin{cases}ax+b, & \text{ if } x<3\\x^2,& \text{ if } x\ge \end{cases}\]
+\end{exercise}
+\vspace*{6\baselineskip}
+
+\begin{exercise}
+The position of a particle along a coordinate axis at time \(t\) (in
+seconds) is given by \(s(t)=2t^3-3t^2+t\) (in meters). Find the function
+that describes its acceleration at time \(t\).
+\end{exercise}
+\vspace*{6\baselineskip}
+
