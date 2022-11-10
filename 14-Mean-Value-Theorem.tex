@@ -15,6 +15,10 @@ exists at least one value \(c\) in \((a,b)\) such that \(f'(c)=0\).
   \includegraphics[scale=0.3]{img/image-20200323191523596.png}
 \end{fullwidth}
 
+\textbf{Skecth of Proof:} 
+If the function is not a constant function, then the assumption of continuity implies that 
+the function has a global extremum on $(a, b)$. Fermat's theorem implies the existence of $c$.
+
 \textbf{Warning:} Differentiability is important. The following is a
 counter-example.
 
@@ -23,7 +27,7 @@ counter-example.
 \begin{example}
 
 Verify that the function \(f(x)=x^2+4x-3\) satisfies the criteria stated
-in Rolle's theorem and find all values \(c\) in the interval \((-3, 3)\)
+in Rolle's theorem and find all values \(c\) in the interval \((-7, 3)\)
 at where \(f'(c)=0\).
 
 \end{example}
@@ -61,7 +65,7 @@ theorem.
 
 Verify the function \(f(x)=\sqrt{x}\) defined over the interval
 \([0,9]\) satisfies the condition of the Mean Value Theorem, and show
-that there exists a value \(c\) in \((0,4)\) such that \(f'(c)\) is
+that there exists a value \(c\) in \((0,9)\) such that \(f'(c)\) is
 equal to the slope of the secant line passing through \((0,f(0))\) and
 \((9,f(9))\). Find these values \(c\) guaranteed by the Mean Value
 Theorem.
@@ -72,7 +76,7 @@ Theorem.
 \begin{example}
 
 Suppose that \(f(0)=-1\) and \(f'(x)>2\) for all values of \(x\) in
-\([-2, 5]\). How large can \(f(x)\) possibly be?
+\([-2, 5]\). How small can \(f(5)\) possibly be?
 
 \end{example}
 \vspace*{6\baselineskip}
@@ -105,17 +109,17 @@ and differentiable over the open interval \((a,b)\).
 \begin{itemize}
 \item
   If \(f'(x)>0\) for all \(x\) in \((a, b)\), then \(f\) is increasing
-  over \((a, b)\).
+  over \([a, b]\).
 \item
   If \(f'(x)<0\) for all \(x\) in \((a, b)\), then \(f\) is decreasing
-  over \((a, b)\).
+  over \([a, b]\).
 \end{itemize}
 
 \end{corollary}
 
 \begin{example}
 
-Show that the equation \(2x-\sin x=0\) has exactly one real root.
+Show that the equation \(2x-\cos x=0\) has exactly one real root.
 
 \end{example}
 \vspace*{6\baselineskip}
@@ -134,14 +138,14 @@ in Rolle's theorem and find all values \(c\) in the interval
 \begin{exercise}
 
 Suppose that \(f(-1)=2\) and \(f'(x)<3\) for all values of \(x\) less
-that 6. How small can \(f(x)\) possibly be?
+that 6. How large can \(f(x)\) possibly be over the interval $[-1, 6]$?
 
 \end{exercise}
 \vspace*{6\baselineskip}
 
 \begin{exercise}
 
-Show that the equation \(x^2-2+\cos x=0\) has exactly one real root.
+Show that the equation \(x^2 + \cos x - 2=0\) has exactly one real root.
 
 \end{exercise}
 
